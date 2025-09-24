@@ -147,8 +147,8 @@ class UPIExtractorWeb:
         st.sidebar.subheader("Processing Settings")
         speed = st.sidebar.slider(
             "Requests per second:",
-            min_value=1,
-            max_value=500,
+            min_value=1.0,
+            max_value=500.0,
             value=1.0,
             step=10.0,
             help="Control the speed of API requests"
